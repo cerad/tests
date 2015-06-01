@@ -1,0 +1,14 @@
+{
+  "name": "cerad/tests",
+  "license": "MIT",
+  "authors": [
+    { "name": "ahundiak", "email": "ahundiak@gmail.com"}
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "doctrine/dbal": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.6"
+  }
+}
