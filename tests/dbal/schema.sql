@@ -44,5 +44,22 @@ INSERT INTO users (id,user_name,disp_name,email) VALUES
 (3,'hclinton','Hillary Clinton','hclinton@example.com'),
 (4,'cclinton','Chelse Clinton', 'cclinton@example.com'),
 (5,'gomally', 'George O''Ma<br>ly','gomally@example.com')
-
 ;
+
+DROP TABLE IF EXISTS types;
+
+CREATE TABLE types 
+(
+  id INT AUTO_INCREMENT NOT NULL, 
+  strx    VARCHAR(255)  NOT NULL,
+  intx    INTEGER,
+  boolx   BOOLEAN  DEFAULT false,
+  decx    DECIMAL(5,2),
+  floatx  FLOAT,
+  doublex DOUBLE,
+  PRIMARY KEY(id)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB;
+
+INSERT INTO types (id,strx,intx,boolx,decx,floatx,doublex) VALUES
+(1,'ONE',42,true,5.22,3.14159,3.14159),
+(2,'TWO',42,0,   5.22,3.14159,3.14159);
